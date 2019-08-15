@@ -11,3 +11,16 @@
     border: 1px solid @navigation-border;
     border-radius: 15px;
 }
+
+.blink(@time:0.5s) {
+    animation: blink @time;
+}
+
+@keyframes blink {
+    from {
+        filter: brightness(1.5);
+    }
+    to {
+        filter: none;
+    }
+}

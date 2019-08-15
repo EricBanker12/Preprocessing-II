@@ -86,6 +86,7 @@
 
       .btn {
         .make-btn(@bg-color:teal);
+        &:hover {.blink();}
         @media @mobile {.make-btn(@width:100%);}
       }
     }

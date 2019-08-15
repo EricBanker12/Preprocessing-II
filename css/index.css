@@ -1,3 +1,11 @@
+@keyframes blink {
+  from {
+    filter: brightness(1.5);
+  }
+  to {
+    filter: none;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -346,6 +354,9 @@ nav div a {
   line-height: 4.5rem;
   border: 1px solid #C0C0C0;
   border-radius: 15px;
+}
+.home .content-pick .destination .btn:hover {
+  animation: blink 0.5s;
 }
 @media (max-width: 550px) {
   .home .content-pick .destination .btn {
